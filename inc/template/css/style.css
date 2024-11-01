@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/yekan.eot');
+    src: url('../fonts/yekan.eot') format('embedded-opentype'),
+    url('../fonts/yekan.woff') format('woff'),
+    url('../fonts/yekan.ttf') format('truetype'),
+    url('../fonts/yekan.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.payment-mess {
+    margin: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    font-family: yekan;
+    direction: rtl;
+    color: green;
+    font-size: 19px;
+    background-color: #fff8c9;
+}
+
+input[type="submit"] {
+    border: none;
+    font-family: yekan;
+    background: none;
+    color: #989898;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #F44336;
+}
+
+.spinner {
+    /* position: absolute; */
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #FFC107;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
